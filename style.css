@@ -33,18 +33,20 @@ body {
 }
 
 button:hover {
-    box-shadow: 0px 0px 8px #00ff08; 
+    box-shadow: 0px 0px 8px #00ff08;
     transform: scale(1.05);
 }
 
-h2.titulo{
+h2.titulo {
     color: #fff;
     font-size: 42px;
     text-align: center;
 }
-h2.titulo span{
+
+h2.titulo span {
     color: #00ff08;
-}    
+}
+
 /* Stylo Cabeçalho */
 
 header {
@@ -97,25 +99,27 @@ section .topo-do-site .flex {
     line-height: 40px;
 }
 
-.topo-do-site .txt-topo-site h1 span{
+.topo-do-site .txt-topo-site h1 span {
     color: #00ff08;
 }
 
-.topo-do-site .txt-topo-site p{
+.topo-do-site .txt-topo-site p {
     color: #fff;
     margin: 40px 0;
 }
 
-.topo-do-site .img-topo-site img{
+.topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
+
 @keyframes flutuar {
-    0%{
-        top:0;
+    0% {
+        top: 0;
     }
-    100%{
-        top:30px;
+
+    100% {
+        top: 30px;
     }
 }
 
@@ -134,52 +138,52 @@ section.especialidades .flex {
     padding: 40px;
     margin-top: 45px;
     border-radius: 20px;
-    transition: .3s ;
+    transition: .3s;
 }
 
-.especialidades .especialidades-box:hover{
+.especialidades .especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px #ffffff78;
 }
 
-.especialidades .especialidades-box h3{
+.especialidades .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
 }
 
 /* Style Sobre */
 
-section.sobre{
+section.sobre {
     padding: 80px 4%;
 }
 
-section.sobre .flex{
+section.sobre .flex {
     align-items: center;
     gap: 60px;
 }
 
-.sobre .img-sobre{
+.sobre .img-sobre {
     width: 500px;
     height: 550px;
     border-radius: 20%;
 }
 
-.sobre .txt-sobre{
+.sobre .txt-sobre {
     color: #fff;
 }
 
-.sobre .txt-sobre h2{
+.sobre .txt-sobre h2 {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 30px;
 }
 
-.sobre .txt-sobre h2 span{
+.sobre .txt-sobre h2 span {
     color: #00ff08;
     display: block;
 }
 
-.sobre .txt-sobre p{
+.sobre .txt-sobre p {
     margin: 20px 0;
     text-align: justify;
 }
@@ -200,121 +204,14 @@ section.sobre .flex{
     box-shadow: 0 0 15px #ffffff78;
 }
 
-.sobre .txt-sobre .btn-social button img{
+.sobre .txt-sobre .btn-social button img {
     width: 45px;
     height: 45px;
 }
 
-/* ESTILO MEUS PROJETOS */
+/* ESTILO MEUS CERTIFICADOS */
 
-section.certificados h2{
-    padding: 20px;
+section.certificados {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    font-family: Popoi;
 }
-
-section.certificados{
-    padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffffff78;
-}
-
-section.certificados .flex{
-    justify-content: space-around;
-}
-
-.ms--images {
-    position: relative;
-    overflow: hidden;
-}
-
-.ms--images .ms-container--horizontal {
-    width: 100%;
-    height: 400px;
-    max-width: 100%;
-}
-
-.ms--images.ms-container--horizontal .ms-track {
-    left: calc(50% - 350px);
-}
-
-.ms--images.ms-container--horizontal .ms-sliders {
-    display: inline-flex;
-}
-
-.ms--images .ms-track {
-    display: flex;
-    position: absolute;
-    white-space: nowrap;
-    padding: 0;
-    margin: 0;
-    list-style: center;
-}
-
-.ms--images .ms-sliders {
-    align-items: center;
-    justify-content: center;
-    width: 700px;
-    height: 400px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-/* INICIO COMENTARIO CARROUSEL
- .img-port .slider{
-    display: block;
-    height: 293px;
-    width: 600px;
-    margin: auto;
-    margin-top: 20px;
-    position: relative;
-}
-
-.img-port .slider li {
-    list-style: none;
-    position: absolute;
-}
-
-.img-port .slider img {
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    vertical-align: top;
-}
-
-.slider input {
-    display: none;
-}
-
-.slider label {
-    background-color: #00ff08;
-    bottom: 10px;
-    cursor: pointer;
-    display: block;
-    height: 10px;
-    position: absolute;
-    width: 10px;
-    z-index: 10;
-}
-
-.slider li:nth-child(1) label{
-    left: 10px;
-}
-
-.slider li:nth-child(2) label{
-    left: 40px;
-}
-
-.slider li:nth-child(3) label{
-    left: 70px;
-}
-
-.slider img {
-    opacity:0;
-    visibility: hidden;
-}
-
-.slider li input:checked ~ img {
-    opacity: 1;
-    visibility: visible;
-    z-index:10;
-} 
-    FIM DO CARROUSEL*/
