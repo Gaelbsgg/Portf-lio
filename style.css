@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
@@ -18,7 +18,6 @@ body {
 .interface {
     max-width: 1280px;
     margin: 0 auto;
-
 }
 
 .btn-contato button {
@@ -33,7 +32,7 @@ body {
 }
 
 button:hover {
-    box-shadow: 0px 0px 8px #00ff08;
+    box-shadow: 0px 0px 8px #00ff08; 
     transform: scale(1.05);
 }
 
@@ -76,7 +75,6 @@ header nav ul {
 }
 
 header nav ul li {
-
     display: inline-block;
     padding: 0 40px;
 }
@@ -117,7 +115,6 @@ section .topo-do-site .flex {
     0% {
         top: 0;
     }
-
     100% {
         top: 30px;
     }
@@ -209,33 +206,99 @@ section.sobre .flex {
     height: 45px;
 }
 
-/* ESTILO MEUS CERTIFICADOS */
-
 section.certificados {
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
-    font-family:Poppins;
-    color: #fff;
-    margin: 0;
-    font-size: 12px;
-}
-
-.certificados .header-certificados .nav-certificados a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.certificados .header-certificados {
-    width: 500px;
-    max-width: 80%;
-    margin: auto;
-    height: 50px;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    min-height: 600px;
 }
 
-.certificados .header-certificados .nav-certificados a {
+/* sliders */
+
+.slider {
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* navigation */
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #00ff08;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
     margin-right: 40px;
 }
 
-/* CAROUSEL */
+.manual-btn:hover {
+    background: #40d3dc;
+}
 
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div {
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
