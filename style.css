@@ -47,6 +47,12 @@ h2.titulo span {
     color: #00ff08;
 }
 
+/* Ancoragem de Links in Page */
+    html{
+        scroll-behavior: smooth;
+    }
+    
+
 /* Stylo Cabeçalho */
 
 header {
