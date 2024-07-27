@@ -139,7 +139,7 @@ section.especialidades .flex {
 }
 
 .especialidades-links {
-    list-style: none;
+    text-decoration: none;
 }
 
 .especialidades .especialidades-box {
