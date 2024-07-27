@@ -1,0 +1,556 @@
+/* Stylo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+button:hover {
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 42px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00ff08;
+}
+
+.padding {
+    padding: 25px;
+}
+
+/* Ancoragem de Links in Page */
+    html{
+        scroll-behavior: smooth;
+    }
+    
+
+/* Stylo Cabeçalho */
+
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Stylo Topo do Site */
+
+section .topo-do-site {
+    padding: 40px 4%;
+}
+
+section .topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #00ff08;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* Style Especialidades */
+
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffffff78;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* Style Sobre */
+
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .img-sobre {
+    width: 500px;
+    height: 550px;
+    border-radius: 20%;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #00ff08;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.btn-social button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffffff78;
+}
+
+.sobre .txt-sobre .btn-social button img {
+    width: 45px;
+    height: 45px;
+}
+
+section.certificados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 600px;
+}
+
+/* sliders */
+
+.slider {
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* navigation */
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #00ff08;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #40d3dc;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div {
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+/* footer */
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #5c5c5c;
+}
+
+footer .flex {
+    justify-content: space-between;
+
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #00ff08;
+}
+
+.line-footer .btn-social-footer button {
+    cursor: pointer;
+    transition: .2s;
+    background: none;
+    border: none;
+    padding: 2px;
+}
+
+.btn-social-footer button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffffff78;
+}
+
+.line-footer .btn-social-footer button img {
+    width: 30px;
+    height: 30px;
+}
+
+.line-footer p i {
+    color: #00ff08;
+    font-size: 22px;
+    padding: 5px;
+}
+
+.line-footer p a {
+    color: #fff;
+}
+
+/* Responsividade para celular */
+
+@media (max-width: 600px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header .btn-contato {
+        margin-top: 20px;
+    }
+
+    .topo-do-site h1 {
+        font-size: 32px;
+    }
+
+    .topo-do-site .txt-topo-site p {
+        font-size: 16px;
+    }
+
+    .especialidades .especialidades-box h3 {
+        font-size: 24px;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 28px;
+    }
+
+    .sobre .txt-sobre p {
+        font-size: 14px;
+    }
+
+    .slider {
+        height: 300px;
+    }
+
+    .navigation-auto {
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#scrollToTopBtn {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555;
+}
+
+/* projetos */
+
+/* projeto1 */
+
+.projeto1 {
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.logo-projeto1 {
+    width: 10x;
+    margin-bottom: 24px;
+}
+
+.container-input {
+    max-width: 480px;
+    margin: 5px 0;
+}
+
+.container-input span {
+    color: #FFF;
+    font-size: 22px;
+}
+
+.slider-projeto1 {
+    appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background: #dfdfdf;
+    height: 5px;
+    outline: none;
+    margin-top: 5px;
+}
+
+.button-cta {
+    height: 40px;
+    background-color: #3eb72b;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container-password {
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title-projeto1 {
+    text-align: center;
+    color: #FFF;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.password {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    border: 1px solid #313131;
+    transition: transform 0.5s;
+}
+
+.password:hover {
+    transform: scale(1.05);
+}
+
+.tooltip {
+    color: #FFF;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background: rgba(15, 15, 15);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 16px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide {
+    display: none;
+}
+
+.container-password:hover .tooltip {
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+fieldset {
+    
+}
+.legend {
+    text-align: center;
+    color: #FFF;
+    font-size: 15px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.check-container {
+    display: flex;
+    padding-top: 8px;
+
+}
+
+.check-box {
+    cursor: pointer;
+    width: 30px;
+    padding-left: 5px;
+}
