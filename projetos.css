@@ -21,6 +21,10 @@ body {
     padding: 0 20px;
 }
 
+.btn-contato {
+    padding-top: 50px;
+}
+
 .btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
